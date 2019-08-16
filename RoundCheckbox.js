@@ -14,6 +14,7 @@ export default class RoundCheckbox extends React.PureComponent {
     iconColor: PropTypes.string,
     borderColor: PropTypes.string,
     checked: PropTypes.bool,
+    borderRadius: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -24,6 +25,7 @@ export default class RoundCheckbox extends React.PureComponent {
     borderColor: 'grey',
     checked: false,
     onValueChange: () => {},
+    borderRadius: null
   };
 
   render() {
@@ -54,7 +56,7 @@ export default class RoundCheckbox extends React.PureComponent {
       height: this.props.size,
       backgroundColor: this.props.checked ? this.props.backgroundColor : 'transparent',
       borderColor: this.props.checked ? this.props.backgroundColor : this.props.borderColor,
-      borderRadius: this.props.size / 2,
+      borderRadius: this.props.borderRadius? this.props.borderRadius : this.props.size / 2,
     };
   }
 }
