@@ -29,7 +29,7 @@ export default class RoundCheckbox extends React.PureComponent {
   };
 
   render() {
-    const iconSize = parseInt(this.props.size * 1.3);
+    const iconSize = parseInt(this.props.size * 1.6);
     return (
       <TouchableWithoutFeedback hitSlop={hitSlop} onPress={this._onPress}>
         <View
