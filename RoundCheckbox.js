@@ -26,7 +26,17 @@ export default class RoundCheckbox extends React.PureComponent {
     checked: false,
     onValueChange: () => {},
     borderRadius: null
+    onPress: () => {}
   };
+
+  constructor(props){
+    super(props);
+    this._onPress = this._onPress.bind(this);;
+  }
+
+  componentDidMount(){
+    this.props.onPress(this._onPress);
+  }
 
   render() {
     const iconSize = parseInt(this.props.size * 1.6);
