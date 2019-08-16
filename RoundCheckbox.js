@@ -54,8 +54,9 @@ export default class RoundCheckbox extends React.PureComponent {
     return {
       width: this.props.size,
       height: this.props.size,
-      backgroundColor: this.props.checked ? this.props.backgroundColor : 'transparent',
-      borderColor: this.props.checked ? this.props.backgroundColor : this.props.borderColor,
+//       backgroundColor: this.props.checked ? this.props.backgroundColor : 'transparent',
+      backgroundColor: this.props.backgroundColor,
+      borderColor: this.props.borderColor,
       borderRadius: this.props.borderRadius? this.props.borderRadius : this.props.size / 2,
     };
   }
