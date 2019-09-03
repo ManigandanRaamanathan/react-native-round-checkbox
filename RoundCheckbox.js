@@ -25,7 +25,7 @@ export default class RoundCheckbox extends React.PureComponent {
     borderColor: 'grey',
     checked: false,
     onValueChange: () => {},
-    borderRadius: null
+    borderRadius: null,
     onPress: () => {}
   };
 
